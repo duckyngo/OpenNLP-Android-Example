@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        >
+
+        <TextView
+            android:id="@+id/answer_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="OpenNLP - Result Sentences"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+
+        <ListView
+            android:id="@+id/expandable_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/play_background"
+            android:divider="@drawable/divider"
+            android:dividerHeight="1.0dip"
+            android:layout_above="@+id/cal_point_bg"/>
+
+        <RelativeLayout
+            android:id="@+id/cal_point_bg"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:focusable="true"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            >
+
+            <TextView
+                android:id="@+id/cal_point"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Time: "
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+
+
+        <ProgressBar
+            android:id="@+id/loading_empty_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+</LinearLayout>
