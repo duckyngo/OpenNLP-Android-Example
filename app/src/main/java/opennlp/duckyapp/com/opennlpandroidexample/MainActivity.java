@@ -34,11 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
         long startTime = System.currentTimeMillis();
         long consumeTime = 0;
+
         //Loading sentence detector model
         InputStream inputStream = null;
         SentenceModel model = null;
-        String sentences[] = null;
-        Span sentencesIndex[] = null;
+        String[] sentences = null;
+        Span[] sentencesIndex = null;
         try {
             inputStream = getAssets().open("en-sent.bin");
             model = new SentenceModel(inputStream);
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             SentenceDetectorME detector = new SentenceDetectorME(model);
 
             //Detecting the sentence
-             sentences = detector.sentDetect(inputEt.getText().toString());
+            sentences = detector.sentDetect(inputEt.getText().toString());
             sentencesIndex = detector.sentPosDetect(inputEt.getText().toString());
 
         }
@@ -63,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Span> spanArrayList = new ArrayList<>();
         if (sentences != null) {
             spanArrayList = new ArrayList<>(Arrays.asList(sentencesIndex));
-
         }
 
 

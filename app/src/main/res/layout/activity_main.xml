@@ -17,9 +17,9 @@
             <EditText
                 android:id="@+id/inputText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="300dp"
                 android:textSize="16dp"
-                android:hint="Enter your text"/>
+                android:hint="Enter your paragraph here"/>
 
 
         </LinearLayout>

@@ -17,11 +17,11 @@
             android:id="@+id/answer_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:gravity="center"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:text="OpenNLP - Result Sentences"
+            android:text="OpenNLP Sentence Detection Result:"
             />
     </RelativeLayout>
 
