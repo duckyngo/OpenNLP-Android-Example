@@ -48,8 +48,8 @@ Finally, we instantiating the `SentenceDetectorME` class and detect sentences fr
 # Screenshot
 Copy the paragraph and paste in the InputText:
 
-![Input Text](screenshot/text_input.png)
+<img src="screenshot/text_input.png" width="320">
 
 Click `EXECUTE` button and see result:
 
-![Input Text](screenshot/result.png)
+<img src="screenshot/result.png" width="320">
